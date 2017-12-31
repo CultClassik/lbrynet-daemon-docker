@@ -6,7 +6,7 @@ Dockerfile to build cultclassik/lbrynet-daemon to run a LBRY node / wallet.
 
 ## Pre-requisites
 
-Requires a working installation of Docker CE or EE and Nvidia-Docker2.
+Requires a working installation of Docker CE or EE.
 
 ## Installation
 
@@ -15,6 +15,12 @@ docker build -t cultclassik/lbrynet-daemon .
 ## Usage
 
 To persist node data including your wallet, map a volume to /root/.local/share/lbry.
+
+docker run --name lbry-wallet \
+  -p 4444:4444/udp \
+  -p 5279:5279/tcp \
+  -v /my/local/storage:/root/.local/share/lbry \
+  cultclassik/lbrynet-daemon
 
 ## Contributing
 
