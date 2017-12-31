@@ -20,7 +20,7 @@ RUN wget --no-check-certificate $SW_URL &&\
     unzip $SW_FILE &&\
     rm $SW_FILE
 
-ADD ./build/script/* /lbry/
+ADD ./script/* /lbry/
 
 RUN chmod +x /lbry/*.sh
 
