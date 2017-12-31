@@ -16,11 +16,11 @@ docker build -t cultclassik/lbrynet-daemon .
 
 To persist node data including your wallet, map a volume to /root/.local/share/lbry.
 
-docker run --name lbry-wallet \
-  -p 4444:4444/udp \
-  -p 5279:5279/tcp \
-  -v /my/local/storage:/root/.local/share/lbry \
-  cultclassik/lbrynet-daemon
+docker run --name lbry-wallet \\
+    -p 4444:4444/udp \\
+    -p 5279:5279/tcp \\
+    -v /my/local/storage:/root/.local/share/lbry \\
+    cultclassik/lbrynet-daemon
 
 ## Contributing
 
