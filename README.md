@@ -1,4 +1,4 @@
-# cpu-docker-lbry [![Build Status](https://travis-ci.org/CultClassik/lbrynet-daemon-docker.svg?branch=master)](https://travis-ci.org/CultClassik/lbrynet-daemon-docker)
+# lbrynet-daemon [![Build Status](https://travis-ci.org/CultClassik/lbrynet-daemon-docker.svg?branch=master)](https://travis-ci.org/CultClassik/lbrynet-daemon-docker)
 [Image on Docker Hub](https://hub.docker.com/r/cultclassik/lbrynet-daemon/)
 
 Dockerfile to build cultclassik/lbrynet-daemon to run a LBRY node / wallet.
