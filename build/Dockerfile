@@ -20,6 +20,10 @@ RUN wget --no-check-certificate $SW_URL &&\
     unzip $SW_FILE &&\
     rm $SW_FILE
 
+ADD ./build/script/* /lbry/
+
+RUN chmod +x /lbry/*.sh
+
 EXPOSE 5279/tcp 4444/udp
 
 VOLUME /root/.local/share/lbry
